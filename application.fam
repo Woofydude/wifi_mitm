@@ -1,0 +1,21 @@
+App(
+	# --- App Info
+	appid="wifi_mitm",
+	name="WiFi MITM",
+
+	# --- Entry point
+	apptype=FlipperAppType.EXTERNAL,
+	entry_point="wifi_mitm",
+
+	# --- Interaction
+	cdefines=["wifi_mitm"],
+	requires=[
+		"gui",
+	],
+
+#	conflicts="",
+#	sdk_headers="",
+
+	# --- Run-time info
+	stack_size=2 * 1024,
+	order=20,
